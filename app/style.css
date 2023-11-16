@@ -5,13 +5,15 @@
   // elementos sejam mais previsíveis em relação ao seu conteúdo interno e bordas.
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 85vh;
   margin: 0;
   overflow: hidden;
 }
-
+.navbar {
+  text-align: right;
+  display: flex;
+  margin: 5px;
+}
 .container {
   display: flex;
   width: 90vw;
