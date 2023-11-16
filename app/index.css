@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+} //seleciona todos os elementos na página. útil ao criar layouts responsivos e fluidos, 
+  //onde você deseja que as dimensões dos 
+  // elementos sejam mais previsíveis em relação ao seu conteúdo interno e bordas.
+  body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+  }
+.navbar {
+  text-align: right;
+  display: flex;
+  margin: 5px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 80vh;
+}
+
+.panel {
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+
